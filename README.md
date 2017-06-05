@@ -1,4 +1,4 @@
-# Sim Shopping Cart
+# Mobile Sim Shopping Cart
 
 Test Scenarios:
 

@@ -1,4 +1,4 @@
-# Amaysim Shopping Cart
+# Sim Shopping Cart
 
 Test Scenarios:
 

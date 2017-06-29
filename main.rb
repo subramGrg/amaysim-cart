@@ -1,9 +1,6 @@
-require './lib/shopping_cart'
-%w[sim small_sim medium_sim large_sim one_gb].each do |file|
-  require "./lib/sims/#{file}"
-end
-
+require 'suparoo'
 require 'yaml'
+
 cart_items = YAML.load_file("./lib/cart_items.yml")
 
 cart_items.each do |title, items|

@@ -1,12 +1,15 @@
 require 'spec_helper'
-require 'shopping_cart'
+require 'suparoo'
 
-require 'sims/sim'
-require 'sims/small_sim'
+RSpec.describe Suparoo do
+	describe Suparoo::ShoppingCart do
+		it "initialises and shows total correctly" do
+      expect(subject.to_s).to be_truthy
+		end
 
-
-RSpec.describe ShoppingCart do
-	describe "ShoppingCart" do
-		it "works"
+		it "adds item to cart" do
+			subject.add :ut_small
+			expect(subject.to_s).to eql(24.90)
+		end
 	end
 end

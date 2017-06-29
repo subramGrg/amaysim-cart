@@ -14,6 +14,10 @@ module SupaRoo
 				SmallSim.new qty do |cart|
 					add_price_to cart
 				end
+			when :ut_medium
+				MediumSim.new qty do |cart|
+					add_price_to cart
+				end
 			end
 		end
 

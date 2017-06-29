@@ -5,7 +5,7 @@ module SupaRoo
       calculate_price &block
     end
 
-    # find out if promotion is running
+    # find if promotion is running
     def promotion?
       true
     end

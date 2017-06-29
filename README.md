@@ -1,12 +1,11 @@
 # Mobile Sim Shopping Cart
 
-This is a non GUI ruby application that provides a shopping cart experience. It runs well with ruby versions 2.x.
-
-### Details
-
-Inputs are read from a YAML file, `lib/cart_items.yml`.
+This is a non GUI ruby application that provides a shopping cart experience. 
+It runs well with ruby versions 2.x.
 
 ## Test Scenarios and total price
+
+Inputs are read from a YAML file, `lib/cart_items.yml`.
 
 The following are an example of shopping cart tests with the expected outcome.
 

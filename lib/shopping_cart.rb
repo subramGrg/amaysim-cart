@@ -18,6 +18,10 @@ module SupaRoo
 				MediumSim.new qty do |cart|
 					add_price_to cart
 				end
+			when :ut_large
+				LargeSim.new qty do |cart|
+					add_price_to cart
+				end
 			end
 		end
 

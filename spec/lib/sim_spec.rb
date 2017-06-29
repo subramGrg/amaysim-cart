@@ -16,5 +16,10 @@ RSpec.describe SupaRoo do
 			subject.add :ut_medium, 4
 			expect(subject.to_s).to eql(119.6)
 		end
+
+		it "adds large sim to cart" do
+			subject.add :ut_large, 4
+			expect(subject.to_s).to eql(159.6)
+		end
 	end
 end

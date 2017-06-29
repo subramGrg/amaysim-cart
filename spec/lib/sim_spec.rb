@@ -1,15 +1,15 @@
 require 'spec_helper'
-require 'suparoo'
+require 'supa_roo'
 
-RSpec.describe Suparoo do
-	describe Suparoo::ShoppingCart do
+RSpec.describe SupaRoo do
+	describe SupaRoo::ShoppingCart do
 		it "initialises and shows total correctly" do
       expect(subject.to_s).to be_truthy
 		end
 
 		it "adds item to cart" do
-			subject.add :ut_small
-			expect(subject.to_s).to eql(24.90)
+			subject.add :ut_small, 4
+			expect(subject.to_s).to eql(99.6)
 		end
 	end
 end

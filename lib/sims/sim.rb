@@ -1,12 +1,9 @@
-module Suparoo
-  class Sim
-    def initialize qty=0
-      @quantity = qty
-      @total = 0
-    end
+module SupaRoo
+  Sim = Struct.new(:quantity, :total) do
+    attr_accessor :total, :price, :quantity
 
     def calculate_price
-      @total = @price * @quantity
+      self.total = price * quantity
     end
   end
 end

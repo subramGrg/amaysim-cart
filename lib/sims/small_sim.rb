@@ -1,30 +1,30 @@
-module Suparoo
-  class SmallSim < Sim
+module SupaRoo
+  class SmallSim < SupaRoo::Sim
     def initialize qty=0, &block
-      super
-      @price = 24.90
-
-      calculate_price
-      block.call @total if block_given?
+      self.price, self.quantity = 24.90, qty
+      calculate_price &block
     end
 
+    # find out if promotion is running
     def promotion?
       true
     end
 
+    # if three sims are added
+    # add a total of 2 sims instead
     def three_sims?
-      @quantity.eql? 3
+      quantity.eql? 3
     end
 
     def calculate_price
-      # if three sims are added
-      # add total of 2 sims instead
-      # as per the promotion
       if promotion? && three_sims?
-        @total = @price * 2
+        self.total = price * 2
       else
         super
       end
+
+      # add item price to total
+      yield total if block_given?
     end
   end
 end

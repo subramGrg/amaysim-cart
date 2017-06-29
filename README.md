@@ -1,7 +1,8 @@
 # Mobile Sim Shopping Cart
 
-This is a non GUI ruby application that provides a shopping cart experience. 
-It runs well with ruby versions 2.x.
+This is a non GUI ruby application that provides a shopping cart experience. <br/>
+
+Application runs well with ruby versions 2.x.
 
 ## Test Scenarios and total price
 
@@ -17,5 +18,6 @@ The following are an example of shopping cart tests with the expected outcome.
 ## Instructions to get things started
 
 * Download directory to a location
-* on the CLI move to the directory
-* while still on the CLI run `ruby main.rb`
+* On the CLI move to the directory
+* While on the project directory run `bundle` to install RSpec
+* While still on the CLI run `ruby main.rb`

@@ -6,7 +6,7 @@ Application runs well with ruby versions 2.x.
 
 ## Test Scenarios and total price
 
-Inputs are read from a YAML file, `lib/cart_items.yml`.
+Inputs are read from a YAML file, `/lib/cart_items.yml`.
 
 The following are an example of shopping cart tests with the expected outcome.
 

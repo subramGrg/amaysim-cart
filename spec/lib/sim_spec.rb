@@ -21,5 +21,10 @@ RSpec.describe SupaRoo do
 			subject.add :ut_large, 4
 			expect(subject.to_s).to eql(159.6)
 		end
+
+		it "adds extra one GB to cart" do
+			subject.add :one_gb, 1
+			expect(subject.to_s).to eql(9.9)
+		end
 	end
 end

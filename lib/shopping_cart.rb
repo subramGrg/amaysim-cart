@@ -22,6 +22,14 @@ module SupaRoo
 				LargeSim.new qty do |cart|
 					add_price_to cart
 				end
+			when :one_gb
+				OneGb.new qty do |cart|
+					add_price_to cart
+					# free for every 2GB purchase
+					# if !@ut_medium
+					# 	round_of_total(price)
+					# end
+				end
 			end
 		end
 
